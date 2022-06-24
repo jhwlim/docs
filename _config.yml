@@ -38,7 +38,7 @@ aux_links:
 aux_links_new_tab: true
 
 # Build settings
-theme: "just-the-docs"
+# theme: "just-the-docs"
 remote_theme: pdmosses/just-the-docs@callouts
 plugins:
   - jekyll-feed
