@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scope 함수
-date: 2021-06-24
+date: 2022-06-24
 parent: 기본 문법
 grand_parent: 코틀린
 ---
