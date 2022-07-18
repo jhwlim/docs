@@ -57,7 +57,7 @@ for (i in 1..6 step 2) {
 ```
 
 {: .note }
-step은 반드시 양의 정수여야 한다.
+`step`은 반드시 양의 정수여야 한다.
 
 ### `downTo`는 값을 반복하여 감소시킨다.
 
@@ -77,7 +77,7 @@ for (i in 5 downTo 1 step 2) {
 
 ### 배열 또는 컬렉션 반복하기
 
-#### (1) element
+**(1) element**
 
 ```kotlin
 val numbers = intArrayOf(1, 2, 3)
@@ -92,7 +92,7 @@ for (n in numbers) {
 3
 ```
 
-#### (2) 인덱스
+**(2) 인덱스**
 
 ```kotlin
 for (i in numbers.indices) {
@@ -106,7 +106,7 @@ for (i in numbers.indices) {
 2
 ```
 
-#### (3) 인덱스, element
+**(3) 인덱스, element**
 
 ```kotlin
 for ((i, n) in numbers.withIndex()) {
@@ -123,3 +123,43 @@ for ((i, n) in numbers.withIndex()) {
 ```
 
 ## while
+
+### while
+
+조건식을 확인하고 반복문을 실행한다.
+
+```kotlin
+var x = 3
+while (x > 0) {
+    println(x--)
+}
+```
+
+출력
+
+```
+3
+2
+1
+```
+
+### do ~ while
+
+먼저 반복문이 실행하고, 조건식을 확인한다. 따라서 반복문은 적어도 한 번은 실행된다.
+
+```kotlin
+do {
+    val y = null
+    println(y)
+} while (y != null)
+```
+
+출력
+
+```
+null
+```
+
+## References
+
+- <https://kotlinlang.org/docs/control-flow.html>
